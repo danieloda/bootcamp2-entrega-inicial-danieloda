@@ -14,30 +14,32 @@ Extensão para Google Chrome (Manifest V3) que acessa a página da **B3** e extr
 ---
 
 ## 📦 Estrutura do Projeto
+```text
 bootcamp2-entrega-inicial-danieloda/
-├─ docs/ # GitHub Pages demo
-│ └─ index.html
-├─ icons/ # Ícones da extensão
-│ ├─ icon16.png
-│ ├─ icon32.png
-│ ├─ icon48.png
-│ └─ icon128.png
+├─ docs/                 # GitHub Pages demo
+│  └─ index.html
+├─ icons/                # Ícones da extensão
+│  ├─ icon16.png
+│  ├─ icon32.png
+│  ├─ icon48.png
+│  └─ icon128.png
 ├─ src/
-│ ├─ assets/ # Bibliotecas (Chart.js)
-│ │ └─ chart.umd.min.js
-│ ├─ background/ # Service Worker
-│ │ └─ service-worker.js
-│ ├─ content/ # Content script (captura B3)
-│ │ └─ content.js
-│ ├─ popup/ # UI do popup
-│ │ ├─ popup.html
-│ │ ├─ popup.css
-│ │ └─ popup.js
-│ └─ styles/ # CSS global
-│ └─ global.css
-├─ manifest.json # Manifest V3 da extensão
-├─ README.md # Este arquivo
-└─ LICENSE # Licença MIT
+│  ├─ assets/            # Bibliotecas (Chart.js)
+│  │  └─ chart.umd.min.js
+│  ├─ background/        # Service Worker
+│  │  └─ service-worker.js
+│  ├─ content/           # Content script (captura B3)
+│  │  └─ content.js
+│  ├─ popup/             # UI do popup
+│  │  ├─ popup.html
+│  │  ├─ popup.css
+│  │  └─ popup.js
+│  └─ styles/            # CSS global
+│     └─ global.css
+├─ manifest.json         # Manifest V3 da extensão
+├─ README.md             # Documentação do projeto
+└─ LICENSE               # Licença MIT
+
 
 ---
 
@@ -66,9 +68,9 @@ bootcamp2-entrega-inicial-danieloda/
 ---
 
 ## 📸 Screenshots
-![Ibovespa gráfico](img/piechart.png)  
-![Data da carteira](img/date_example.png)  
-![Página B3](img/ibovespa.png)  
+![Ibovespa gráfico](docs/img/piechart.png)  
+![Data da carteira](docs/img/date_example.png)  
+![Página B3](docs/img/ibovespa.png)    
 
 ---
 
