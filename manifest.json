@@ -1,1 +1,30 @@
- 
+ {
+  "manifest_version": 3,
+  "name": "Bootcamp Helper - B3 Ibovespa",
+  "version": "1.0.0",
+  "description": "Extensão Chrome MV3 do Bootcamp II. Acessa a página da B3, extrai a coluna Part. (%) do Ibovespa e gera um gráfico de pizza.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Bootcamp Helper",
+    "default_popup": "src/popup/popup.html"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-amplos/indice-ibovespa-ibovespa-composicao-da-carteira.htm*"
+      ],
+      "js": ["src/content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "src/options/options.html"
+}
