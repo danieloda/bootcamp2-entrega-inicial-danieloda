@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "B3 Ibovespa Helper",
   "version": "1.0.0",
-  "description": "Chrome Extension MV3. Accesses the B3 Ibovespa composition page, extracts the Part. (%) column and generates a pie chart of stock weights.",
+  "description": "Chrome extension that extracts Ibovespa index composition from B3 and shows it in a pie chart.",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
@@ -16,14 +16,20 @@
   "background": {
     "service_worker": "src/background/service-worker.js"
   },
-  "permissions": ["storage"],
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
   "content_scripts": [
     {
       "matches": [
-        "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-amplos/indice-ibovespa-ibovespa-composicao-da-carteira.htm*"
+        "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-amplos/indice-ibovespa-ibovespa-composicao-da-carteira.htm*",
+        "https://sistemaswebb3-listados.b3.com.br/*"
       ],
       "js": ["src/content/content.js"],
-      "run_at": "document_idle"
+      "run_at": "document_idle",
+      "all_frames": true
     }
   ],
   "options_page": "src/options/options.html"
