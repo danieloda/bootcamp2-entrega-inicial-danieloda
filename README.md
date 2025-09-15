@@ -39,7 +39,7 @@ bootcamp2-entrega-inicial-danieloda/
 ├─ manifest.json         # Manifest V3 da extensão
 ├─ README.md             # Documentação do projeto
 └─ LICENSE               # Licença MIT
-
+```
 
 ---
 
