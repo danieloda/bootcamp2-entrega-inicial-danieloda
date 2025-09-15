@@ -2,6 +2,10 @@
 
 Extensão para Google Chrome (Manifest V3) que acessa a página da **B3** e extrai a composição do índice **Ibovespa**, exibindo os dados em um **gráfico de pizza interativo** (Chart.js).
 
+> ⚠️ **Importante:**  
+> Esta extensão funciona especificamente na página oficial da B3 com a composição do Ibovespa:  
+> [https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-amplos/indice-ibovespa-ibovespa-composicao-da-carteira.htm](https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-amplos/indice-ibovespa-ibovespa-composicao-da-carteira.htm)
+
 ---
 
 ## 🚀 Funcionalidades
