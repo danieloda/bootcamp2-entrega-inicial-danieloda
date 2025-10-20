@@ -1,0 +1,31 @@
+{
+  "name": "bootcamp2-entrega-inicial-danieloda",
+  "version": "1.0.0",
+  "description": "Extensão para Google Chrome (Manifest V3) que acessa a página da **B3** e extrai a composição do índice **Ibovespa**, exibindo os dados em um **gráfico de pizza interativo** (Chart.js).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "node scripts/build-extension.mjs",
+    "test:e2e": "playwright test --reporter=list,html",
+    "test": "npm run build && npm run test:e2e",
+    "ci": "npm ci && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieloda/bootcamp2-entrega-inicial-danieloda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieloda/bootcamp2-entrega-inicial-danieloda/issues"
+  },
+  "homepage": "https://github.com/danieloda/bootcamp2-entrega-inicial-danieloda#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.8.1",
+    "archiver": "^7.0.1"
+  }
+}
